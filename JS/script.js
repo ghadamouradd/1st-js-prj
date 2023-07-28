@@ -6,7 +6,7 @@ var totalPrice = 0
 allProducts.forEach(function(item){
     item.onclick=function(){
         totalPrice += +(item.getAttribute("price"))
-        content.innerHTML += item.textContent + ".&npsb"
+        content.innerHTML += item.textContent 
         if (content.innerHTML != ""){
             btn.style.display= "block";
             btn.style.backgroundColor = "pink";
